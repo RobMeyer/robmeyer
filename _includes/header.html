@@ -1,0 +1,14 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  </div>
+  <div class="site-nav">
+    <a href="{{ "c/" | relative_url}}">👨🏻‍💻 Coder</a>
+    <a href="{{ "p/" | relative_url}}">📸 Photographer</a>
+    <a href="{{ "m/" | relative_url}}">🔨 Maker</a>
+    <a href="{{ "b/" | relative_url}}">✍🏻 Blogger</h2>
+  </div>
+</header>
